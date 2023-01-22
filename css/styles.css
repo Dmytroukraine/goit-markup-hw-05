@@ -183,7 +183,6 @@ body {color:var(--primary-text-color);
          transform: translate(-50%, -50%); 
          width: 408px;
          height: 576px;
-         border: solid  2px var(--accent-color);
          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
          0px 1px 3px rgba(0, 0, 0, 0.12), 
          0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -199,14 +198,13 @@ body {color:var(--primary-text-color);
                padding: 0;
                margin: 0;
                border: none;
-               cursor: pointer;
-               background-color: var(--second-text-color);}      
+               cursor: pointer;}      
 
-.close-win:hover {background-color: var(--accent-color);}
-
-
-.cross {}
-
+.close-win:hover {box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}
+.cross {fill: var(--title-text-color);
+       stroke: #94989d;}
+.cross:hover {fill: var(--accent-color);
+              stroke: var(--accent-color);}
 
 /* button */
 
