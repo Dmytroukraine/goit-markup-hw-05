@@ -257,6 +257,33 @@ body {color:var(--primary-text-color);
 .description-text {color:var(--primary-text-color);
                    letter-spacing: 0.02em;}   
                  
+.box {position: relative;}
+                   
+.overlay {position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: translateY(100%);
+          transition: transform 250ms ease;
+          background-color: var(--accent-color);} 
+
+.overlay-text {color: var(--other-background-color);
+              display:inline-block;
+              position: relative;
+              top:40px;
+              right: 32px;
+              bottom: 164px;
+              left: 32px;
+              width: 296px;
+              height: 96px;
+              margin: 40px, 32px, 164px, 32px;}    
+              
+.box:hover .overlay {transform: translateY(0);} 
+
+.box {position: relative;
+      overflow: hidden;}
+
 /* images */
 
 .image {display: block;
