@@ -98,6 +98,19 @@ body {color:var(--primary-text-color);
                   letter-spacing: 0.02em;                  
                   text-decoration: none;}
 
+                     .link{position: relative;}   
+                     .link::before {content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 0;
+                                    height: 4px;
+                                    background-color:var(--accent-color);
+                                    transition: width 250ms;}
+              
+                     .link:hover::before {width: 100%;}
+                                   
+                     
+
 .work {text-decoration: none;}
 
 .nav .site .link:hover, .nav .site .link:focus {color:var(--accent-color);}  
@@ -269,7 +282,7 @@ body {color:var(--primary-text-color);
           transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
           background-color: var(--accent-color);} 
 
-.overlay-text {color: var(--other-background-color);
+.hidden-text {color: var(--other-background-color);
               display:inline-block;
               position: relative;
               top:40px;
