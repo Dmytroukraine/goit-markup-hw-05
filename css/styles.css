@@ -98,22 +98,35 @@ body {color:var(--primary-text-color);
                   letter-spacing: 0.02em;                  
                   text-decoration: none;}
 
-                     .link{position: relative;}   
-                     .link::before {content: '';
-                                    position: absolute;
-                                    bottom: 0;
-                                    width: 0;
-                                    height: 4px;
-                                    background-color:var(--accent-color);
-                                    transition: width 250ms;}
-              
-                     .link:hover::before {width: 100%;}
-                                   
-                     
+.active {position: relative;} 
 
+.active::after {content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 4px;
+                background-color:var(--accent-color);
+                border-radius: 2px;
+                opacity: 1;}  
+.nav .site .link.active {color: var(--accent-color);}                
+
+.link{position: relative;}  
+
+.link::before {content: '';
+               position: absolute;
+               bottom: 0;
+               width: 0;
+               height: 4px;
+               background-color:var(--accent-color);                                    
+               transition: width 250ms;} 
+              
+.link:hover::before {width: 100%;}                   
+ 
 .work {text-decoration: none;}
 
-.nav .site .link:hover, .nav .site .link:focus {color:var(--accent-color);}  
+.site .link:hover, .site .link:focus {color:var(--accent-color);}  
 
 .mail .address {color:var(--primary-text-color);
                             text-decoration: none;} 
