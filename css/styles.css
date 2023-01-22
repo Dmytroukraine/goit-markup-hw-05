@@ -110,6 +110,7 @@ body {color:var(--primary-text-color);
                 background-color:var(--accent-color);
                 border-radius: 2px;
                 opacity: 1;}  
+                
 .nav .site .link.active {color: var(--accent-color);}                
 
 .link{position: relative;}  
