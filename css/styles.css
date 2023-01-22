@@ -265,7 +265,8 @@ body {color:var(--primary-text-color);
           width: 100%;
           height: 100%;
           transform: translateY(100%);
-          transition: transform 500ms ease;
+          transition: transform 250ms ease;
+          transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
           background-color: var(--accent-color);} 
 
 .overlay-text {color: var(--other-background-color);
