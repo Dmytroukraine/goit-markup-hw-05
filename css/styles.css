@@ -397,10 +397,9 @@ body {color:var(--primary-text-color);
                margin-top: 72px;}  
 
 .list {border: 0.5px solid #F4F4FD;
-       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
        background:var(--second-text-color);} 
        
-.list:hover, .list:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}       
+.list:hover, .list:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}        
 
 .work-images .list.a + .list.a {margin-left: 20px;} 
 .work-images .list.b + .list.b {margin-left: 20px;} 
