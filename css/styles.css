@@ -598,9 +598,19 @@ body {color:var(--primary-text-color);
               
 .footer-head {margin-left: 120px;}
 
-.footer-icon {fill: #FFFFFF;}
+.ftr-icon {fill: #FFFFFF;}
 
-.footer-icon:hover {fill: var(--accent-color);}
+.footer-icon {display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 40px;
+              width: 40px;
+              margin: 0 auto;
+              text-align: center;
+              border: none;
+              border-radius: 50%;}
+
+.footer-icon:hover {background-color: #31D0AA;}
 
 /* hiden title */
 
